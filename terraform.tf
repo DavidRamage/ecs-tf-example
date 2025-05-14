@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "dramage-terraform-statebucket"
-    key = "ecscluster"
+    key    = "ecscluster"
     region = "us-west-2"
   }
 }
