@@ -23,3 +23,8 @@ module "nginx-service" {
   ecs_cluster_id = module.cluster.cluster_id
   task_definition_arn = module.nginx-task-definition.task_definition_arn
 }
+
+module "load-balancer" {
+  source = "./load-balancer"
+  vpc_id = var.vpc_id
+}
