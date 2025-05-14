@@ -1,9 +1,9 @@
 resource "aws_kms_key" "cluster-key" {
-  description = "ecs_cluster_key"
+  description             = "ecs_cluster_key"
   deletion_window_in_days = 7
 }
 
-resource "aws_ecs_cluster" "demo-cluster" {
+resource "aws_ecs_cluster" "cluster" {
   name = "demo-cluter"
   configuration {
     execute_command_configuration {
