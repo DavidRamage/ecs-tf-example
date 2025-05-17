@@ -1,10 +1,10 @@
 variable "iam_role_name" {
-  type = string
+  type    = string
   default = "AWSServiceRoleForECS"
 }
 
 variable "protocol" {
-  type = string
+  type    = string
   default = "HTTP"
 }
 
@@ -21,52 +21,52 @@ variable "task_definition_arn" {
 }
 
 variable "desired_count" {
-  type = number
+  type    = number
   default = 3
 }
 
 variable "health_check_path" {
-  type = string
+  type    = string
   default = "/"
 }
 
 variable "health_check_proto" {
-  type = string
+  type    = string
   default = "HTTP"
 }
 
 variable "matcher" {
-  type = string
+  type    = string
   default = "200"
 }
 
 variable "container_port" {
-  type = number
+  type    = number
   default = 80
 }
 
 variable "health_check_port" {
-  type = number
+  type    = number
   default = 80
 }
 
 variable "healthy_threshold" {
-  type = number
+  type    = number
   default = 2
 }
 
 variable "unhealthy_threshold" {
-  type = number
+  type    = number
   default = 2
 }
 
 variable "timeout" {
-  type = number
+  type    = number
   default = 10
 }
 
 variable "interval" {
-  type = number
+  type    = number
   default = 30
 }
 
