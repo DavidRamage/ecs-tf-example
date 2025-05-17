@@ -22,6 +22,7 @@ module "nginx-service" {
   name = "nginx"
   ecs_cluster_id = module.cluster.cluster_id
   task_definition_arn = module.nginx-task-definition.task_definition_arn
+  vpc_id = var.vpc_id
 }
 
 module "load-balancer" {
