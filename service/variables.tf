@@ -47,7 +47,7 @@ variable "container_port" {
 
 variable "health_check_port" {
   type    = number
-  default = 80
+  default = 8080
 }
 
 variable "healthy_threshold" {
@@ -71,5 +71,13 @@ variable "interval" {
 }
 
 variable "vpc_id" {
+  type = string
+}
+
+variable "load_balancer_arn" {
+  type = string
+}
+
+variable "security_group_id" {
   type = string
 }

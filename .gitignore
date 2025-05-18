@@ -37,4 +37,4 @@ override.tf.json
 terraform.rc
 
 #Vim swap files
-.*.swp
+*.swp
