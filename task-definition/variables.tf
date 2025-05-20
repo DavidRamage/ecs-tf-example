@@ -3,12 +3,12 @@ variable "family" {
 }
 
 variable "cpu" {
-  type = number
+  type    = number
   default = 256
 }
 
 variable "memory" {
-  type = number
+  type    = number
   default = 512
 }
 
