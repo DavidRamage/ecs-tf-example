@@ -3,6 +3,7 @@ resource "aws_ecs_service" "service" {
   cluster         = var.ecs_cluster_id
   desired_count   = var.desired_count
   task_definition = var.task_definition_arn
+  launch_type = "FARGATE"
   load_balancer {
     target_group_arn = aws_lb_target_group.service.arn
     container_name   = var.name
