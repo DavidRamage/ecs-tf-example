@@ -1,8 +1,3 @@
-variable "iam_role_name" {
-  type    = string
-  default = "AWSServiceRoleForECS"
-}
-
 variable "protocol" {
   type    = string
   default = "HTTP"

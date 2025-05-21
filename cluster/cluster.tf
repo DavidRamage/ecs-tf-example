@@ -4,7 +4,7 @@ resource "aws_kms_key" "cluster-key" {
 }
 
 resource "aws_ecs_cluster" "cluster" {
-  name = "demo-cluter"
+  name = "demo-cluster"
   configuration {
     execute_command_configuration {
       kms_key_id = aws_kms_key.cluster-key.arn
