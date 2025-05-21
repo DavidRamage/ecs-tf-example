@@ -47,7 +47,7 @@ variable "container_port" {
 
 variable "health_check_port" {
   type    = number
-  default = 8080
+  default = 80
 }
 
 variable "healthy_threshold" {

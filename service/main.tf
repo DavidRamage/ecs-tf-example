@@ -51,11 +51,11 @@ resource "aws_security_group" "nginx-security-group" {
 }
 
 
-resource "aws_security_group_rule" "allow-alt-http" {
+resource "aws_security_group_rule" "allow-http" {
   security_group_id        = aws_security_group.nginx-security-group.id
   source_security_group_id = var.security_group_id
-  from_port                = 8080
-  to_port                  = 8080
+  from_port                = 80
+  to_port                  = 80
   protocol                 = "tcp"
   type                     = "ingress"
 }
